@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+main {
+    display: flex;
+    background-color: rgb(94, 193, 225);
+}
+
+/* Side Bar */
+
+.side-bar {
+    width: 25%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    margin: 0.5vw;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 3vh;
+    height: 15vh;
+    background-color: rgb(27, 26, 26);
+    border-radius: 8px;
+}
+
+.top-buttons p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 1vw;
+}
+
+.library {
+    height: 70vh;
+    border-radius: 8px;
+    background-color: rgb(27, 26, 26);
+}
+
+.library-nav {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.library-icons {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.library-nav button {
+    font-size: 19px;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vh 0.5vw;
+    margin-right: 0.5vw;
+    background-color: rgb(59, 58, 58);
+}
+
+.playlists-search {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    padding-bottom: 2.5vh;
+}
+
+/* Home Page */
+
+.home-page {
+    width: 75%;
+    border-radius: 8px;
+    margin: 1vh 0.5vw 1vh 0vw;
+    background-color: rgb(27, 26, 26);
+}
+
+/* Play Track */
+
+.play-track{
+    height: 12vh;
+    width: 100vw;
+    background-color: rgb(240, 99, 48);
+}
