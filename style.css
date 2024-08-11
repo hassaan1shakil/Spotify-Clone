@@ -7,7 +7,7 @@
 
 main {
     display: flex;
-    background-color: rgb(94, 193, 225);
+    background-color: black;
 }
 
 /* Side Bar */
@@ -147,5 +147,5 @@ main {
 .play-track{
     height: 12vh;
     width: 100vw;
-    background-color: rgb(240, 99, 48);
+    background-color: black;
 }
