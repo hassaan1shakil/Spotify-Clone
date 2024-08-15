@@ -10,6 +10,14 @@ main {
     background-color: black;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 /* Side Bar */
 
 .side-bar {
@@ -29,7 +37,7 @@ main {
     row-gap: 3vh;
     height: 15vh;
     padding-left: 1vw;
-    background-color: rgb(27, 26, 26);
+    background-color: rgb(20, 19, 19);
     border-radius: 8px;
 }
 
@@ -45,7 +53,7 @@ main {
 .library {
     height: 70vh;
     border-radius: 8px;
-    background-color: rgb(27, 26, 26);
+    background-color: rgb(20, 19, 19);
 }
 
 .library-nav {
@@ -144,12 +152,42 @@ main {
     width: 75%;
     border-radius: 8px;
     margin: 1vh 0.5vw 1vh 0vw;
-    background-color: rgb(27, 26, 26);
+    background-color: rgb(20, 19, 19);
 
     height: 86vh;
     scroll-behavior: smooth;
     scrollbar-width: 20px;
     overflow-y: scroll;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    height: 13vh;
+    padding: 2vh 1vw 0vh 1vw;
+    background-color: coral;
+}
+
+.navbar-top-buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-buttons{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 1vh 0.75vw;
+    margin-right: 0.5vw;
+    background-color: rgb(43, 41, 41);
+    opacity: 85%;
 }
 
 .main-playlists{
@@ -245,6 +283,112 @@ main {
     font-weight: 400;
 }
 
+/* Cards */
+
+.recommended-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 1.5vw;
+    row-gap: 6vh;
+    padding: 10vh 1vw;
+}
+
+.card-object{
+    width: 22.5vw;
+    height: 60vh;
+    border-radius: 5px;
+    background-image: url(https://i1.sndcdn.com/artworks-000129613107-bud4s0-t500x500.jpg);
+    background-size: cover;
+}
+
+.card-object-preview{
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+    width: 17vw;
+    height: 8vh;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.card-object-preview img{
+    height: 100%;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.card-object-title{
+    font-size: 26px;
+    z-index: 1;
+}
+
+.card-object-details{
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0vh 2vw 10vh 2vw;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.normal-links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+}
+
+.list-title{
+    color: white;
+    font-weight: 600;
+}
+
+.normal-links li{
+    list-style-type: none;
+    padding-top: 1.5vh;
+}
+
+.social-links{
+    display: flex;
+    column-gap: 1vw;
+}
+
+.footnote{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.footnote-links{
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+.copyright{
+    display: flex;
+}
 
 
 /* Play Track */
