@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(210, 206, 206);
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -129,6 +129,11 @@ main {
     row-gap: 1vh;
 }
 
+.playlists-home{
+    display: flex;
+    flex-direction: column;
+}
+
 .playlist-title{
     font-size: 18px;
 }
@@ -140,7 +145,107 @@ main {
     border-radius: 8px;
     margin: 1vh 0.5vw 1vh 0vw;
     background-color: rgb(27, 26, 26);
+
+    height: 86vh;
+    scroll-behavior: smooth;
+    scrollbar-width: 20px;
+    overflow-y: scroll;
 }
+
+.main-playlists{
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+    row-gap: 2vh;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+}
+
+.main-playlist-object{
+    display: flex;
+    align-items: center;
+    position: relative;
+    column-gap: 1vw;
+    width: 17vw;
+    height: 8vh;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.main-playlist-object img{
+    height: 100%;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.main-playlist-object p{
+    z-index: 1;
+}
+
+.effect-box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    opacity: 20%;
+    border-radius: inherit;
+}
+
+.playlists-home{
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw;
+    row-gap: 8vh;
+}
+
+.recommended-playlist{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.recommended-playlist h2{
+    padding-top: 0.5vh;
+}
+
+.recommended-playlist-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5vw;
+}
+
+.recommended-playlist-link{
+    text-decoration: none;
+}
+
+.recommended-playlist-object{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.recommended-playlist-object img{
+    width: 180px;
+    border-radius: 5px;
+}
+
+.recommended-playlist-object h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recommended-playlist-object h3{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
 
 /* Play Track */
 
